@@ -1,0 +1,485 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: content-box;
+	height: 100%;
+	background-color: #1B1D21;
+}
+/* mon en-tete start*/
+header{
+	width: content-box;
+	height: content-box;
+	border-bottom: solid 2px lightgrey;
+	position: sticky;
+	top: 0;	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	z-index: 5;
+	background-color: #1B1D21;
+}
+div#hgauche{
+	width: 35%;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	white-space: nowrap;
+	overflow: hidden;
+}
+div#hdroite{
+	width: 65%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+img{
+	width: 90px;
+	height: 80px;
+	margin: 0 0 0 1.5%;
+}
+.tt{
+	margin: 0 0 0 2%;
+	font-size: 2.2em;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+}
+.white{
+	color: whitesmoke;
+}
+header a{
+	height: 100%;
+}
+div.liste{
+	margin-right: 0;	
+	width: content-box;
+	height: content-box;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
+	white-space: nowrap;
+}
+div.liste .lt{
+	font-size: 1.5em;
+	text-decoration: none;	
+	margin: 0 0 0 0.4%;
+	font-family: 'Vollkorn', serif;
+}
+img.ilt{
+	width:1.5rem;
+	height: 1.5rem;
+	margin: 0 5%;
+}
+.ac{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+	
+img.iltt{
+	width: 0.8rem;
+	height: 1.5rem;
+	margin: auto 5% 0;
+}	
+
+img.ilttt{
+	width: 1.2rem;
+	height: 1.5rem;
+	margin: 0 3%;
+}
+img.iltttt{
+	width: 1.2rem;
+	height: 1.5rem;
+	margin: 0 5%;
+}
+a:hover{
+	filter: invert(30%)
+}
+
+div.img{
+	margin-right: 8%;	
+	width: 100%;
+}
+/* mon en-tete end*/
+
+/* Votre style et avis start*/
+div.mainstyle{
+	height: content-box;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+div.style{
+	width: content-box;
+}
+div.ban{
+	width: 5%;
+	margin: 0 1.5% 0 1.5%;
+	display: flex;
+	align-content: center;
+}
+div.banie{
+	background-color: whitesmoke;
+	width: 100%;
+	height: 2px;
+	margin: auto 0;
+}
+.st{
+	font-family: 'Eczar', serif;
+	text-shadow: 2px 2px 5px black;
+}
+/* Votre style et avis end*/
+
+/* Photo coupe start*/
+div#maincoupe{
+	width: 100%;
+	height: 39%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 4rem;
+}
+div.icps{
+	width: 22%;
+	height: 100%;
+}
+
+div.prcmain{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right bottom, #EFEFEF, #7D7D7D);
+	border-radius: 10px;
+}
+ 		/* Boxe Shadow*/
+		
+div.prcmain::before,
+div.prcmain::after{
+	position: absolute;
+	bottom:5px;
+	z-index: -1;
+	width: 50%;
+	height: 8%;
+	content: "";
+	background: rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px rgba(0,0,0, 1), 0 20px 10px rgba(0,0,0, 1);
+}
+div.prcmain::before{
+	left: 0;
+	transform: rotate(-4deg);
+}
+div.prcmain::after{
+	right: 0;
+	transform: rotate(4deg);
+}
+
+
+		/* Config conteneur*/
+		
+div.prcmain div.contc{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+		/* Config espace pour span Timeline*/
+
+		/* Config du slider d'image
+			widht = 100% * Nombre d'image */
+div.Cslid{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500%;
+	height: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+		/* Annulation des marge des Figure*/
+div.prcmain figure{
+	position:relative;
+	display:inline-block;
+	padding:0;
+	margin: 0;
+	height: 100%;
+	width: 20%;
+}
+figure.CH{
+	filter: grayscale(75%);
+}
+figure.CF{
+	filter: grayscale(55%);
+}
+.picH{
+	height: 100%;
+	width: 100%;
+	margin: auto 0 auto 0;
+	padding: 0;
+
+}
+		/* Effet sur image*/
+div.prcmain figure::after{
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+
+}
+		/* Configue de la legende*/
+div.prcmain figcaption{
+	position:absolute;
+	left:0; right:0; bottom: 0;
+	padding: 20px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align:center;
+	letter-spacing: 0.05em;
+	font-size: 1.3rem;
+	word-spacing: 0.05em;
+	font-family: Georgia, Times, serif;
+	background: #fff;
+	background: rgba(255,255,255,0.63);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+		/* Animation*/
+
+@keyframes slider{
+	0%, 15%, 100% 	{ left: 0 }
+	20%, 35%		{ left: -100% }
+	40%, 55%		{ left: -200% }
+	60%, 75%		{ left: -300% }
+	80%, 93%		{ left: -400% }
+}
+
+div.Cslid{
+	-webkit-animation: slider 50s infinite;
+    -moz-animation: slider 50s infinite;
+    -o-animation: slider 50s infinite;
+     animation: slider 50s infinite;
+}
+
+/* les petit point*/
+
+.dots_commands  {
+	padding:0;
+	margin:32px 0 0;
+	text-align: center;
+}
+.dots_commands li {
+	display: inline;
+	padding:0; margin:0;
+}
+.dots_commands div.ro{
+	position: relative;
+	display: inline-block;
+	height:8px; width: 8px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+
+}
+
+.dots_commands li:first-child div.ro{ z-index: 2; }
+
+/* slide actuelle au nv des point*/
+
+	/* on style after et before, on utilisera les deux */
+.dots_commands li:first-child div:after,
+.dots_commands li:first-child div:before {
+	position: absolute;
+	top: 0; left: 0;
+	content: " ";
+	width: 8px; height: 8px;
+	background: #6F6F6F;
+	z-index:2;
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+}
+	/* on anime "after" */
+.dots_commands li:first-child div:after {
+	animation: dotser 50s infinite;
+}
+	/* on cache "before", on l'utilise uniquement au clic (cf. bonux précédent) */
+.dots_commands li:first-child div:before { display:none; }
+ 
+	/* c'est parti pour l'animation ! */
+@keyframes dotser {
+	0%, 100% 	{ opacity: 1; left: 0; 		}
+ 		
+	15%			{ opacity: 1; left: 0;		}
+	17%			{ opacity: 0; left: 0;		}
+	18%			{ opacity: 0; left: 275%;	}
+	20%			{ opacity: 1; left: 275%;	}
+ 		
+	35%			{ opacity: 1; left: 275%;	}
+	37%			{ opacity: 0; left: 275%;	}
+	38%			{ opacity: 0; left: 550%;	}
+	40%			{ opacity: 1; left: 550%;	}
+ 		
+	55%			{ opacity: 1; left: 550%;	}
+	57%			{ opacity: 0; left: 550%;	}
+	58%			{ opacity: 0; left: 825%;	}
+	60%			{ opacity: 1; left: 825%;	}
+
+	75%			{ opacity: 1; left: 825%;	}
+	77%			{ opacity: 0; left: 825%;	}
+	78%			{ opacity: 0; left: 1100%;	}
+	80%			{ opacity: 1; left: 1100%;	}
+ 		
+	93%			{ opacity: 1; left: 1100%;	}
+	97%			{ opacity: 0; left: 1100%;	}
+	98%			{ opacity: 0; left: 0;	}
+}
+/* Photo coupe end*/
+/* Prendre rdv start*/
+
+div#rdv{
+	width: 100%;
+	height: 25%;
+	margin-top: 5%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+button#BRDV{
+	height: 50%;
+	width: 18%;
+	background: url("../img/button.jpg");
+	overflow: hidden;
+	border-radius: 25px;
+	border: thick double #4D4D4D;
+	box-shadow: inset 0 0 0 3px #0E8E86;
+	color: #0E8E86;
+	font-size: 1.7rem;
+	outline: none;
+	display: block;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.5s ease;
+	 -webkit-transition: all 0.5s ease;
+	 -moz-transition: all 0.5s ease;
+	 -o-transition: all 0.5s ease;
+	 -ms-transition: all 0.5s ease;
+	 overflow: hidden;
+	 text-shadow: 0 0 5px black;
+	 font-family: 'PT Serif', serif;
+}
+ #BRDV .insider {
+	 background: #FF4000;
+	 width: 100%;
+	 height: 7%;
+	 position: absolute;
+	 right: -110%;
+	 transform: rotateZ(135deg);
+	 -webkit-transform: rotateZ(135deg);
+	 -moz-transform: rotateZ(135deg);
+	 -o-transform: rotateZ(135deg);
+	 -ms-transform: rotateZ(135deg);
+}
+#BRDV:hover .insider{
+	 transition: all 1.5s ease;
+	 -webkit-transition: all 1.5s ease;
+	 -moz-transition: all 1.5s ease;
+	 -o-transition: all 1.5s ease;
+	 -ms-transition: all 1.5s ease;
+	 right: 110%;
+}
+/* 2émé animation*/
+#BRDV{
+	transition: color 0.5s 1.5s;
+}
+#BRDV::before, #BRDV::after{
+	 border: 0 solid transparent;
+	 border-radius: 20px;
+	 box-sizing: border-box;
+	 content: '';
+	 pointer-events: none;
+	 position: absolute;
+	 width: 0;
+	 height: 0;
+	 bottom: 0;
+	 right: 0;
+}
+#BRDV::before{
+	 border-bottom-width: 4px;
+	 border-left-width: 4px;
+}
+#BRDV::after{
+	border-top-width: 4px;
+	border-right-width: 4px;
+}
+#BRDV:hover{
+	color: #8D2F11;
+}
+#BRDV:hover::before, #BRDV:hover::after{
+	 border-color: #8D2F11;
+	 transition: border-color 0s, width 0.8s, height 0.4s;
+	 width: 100%;
+	 height: 100%;
+}
+#BRDV:hover::before{
+	transition-delay: 0s, 0s, 0.6s;
+}
+#BRDV:hover::after{
+	transition-delay: 0s, 0.25s, 0s;
+}
+
+/* Prendre rdv start end*/
+/* Les Avis start*/
+div#AvisMain{
+	width: 100%;
+	height: 42%;
+	margin-top: 4rem;
+	display: flex;
+	justify-content: center;
+}
+div.avis{
+	width: 20%;
+	margin: 0 5% 0 5%;
+	height: 100%;
+	border: solid 1px whitesmoke;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+div.ecrit{
+	width: 90%;
+	height: 73%;
+	margin: 5% auto;
+	color: whitesmoke;
+	font-size: 1.3rem;
+	overflow: auto;
+	text-align: justify;
+	line-height: 1.7rem;
+}
+div.note{
+	width: 100%;
+	height: 22%;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background: rgba(138,138,138,0.5);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #C63809;
+}
+
+div.note em{
+		margin: auto 0;
+		font-size: 2rem;
+}
+div#spaceend{
+	width: 100%;
+	height: 5.5%;
+}
