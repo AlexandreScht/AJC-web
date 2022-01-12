@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/css_rdv.css">
+	<!-- les polices -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+	<title>paid-us</title>
+</head>
+<body>
+		<!-- Mon en-tete start -->
+	<header>
+		<div id="hgauche">
+			<img class="ac" src="../img/logo.png">
+			<a class="tt white ac" href="../haircut.html">L'Atelier du Coiffeur</a>
+		</div>
+		<div id="hdroite">
+			<div class="white liste ac">
+				<div class="img un">
+					<a class="lt white ac" id="tel" href="contact.html"><img class="ilt ac" src="../img/tel.png">Nous contacter</a>
+				</div>
+				<div class="img deux">
+					<a class="lt white ac" id="itin" href="itineraire.html"><img class="iltt" src="../img/itin.png">Itinéraire</a>
+				</div>
+				<div class="img trois">
+					<a class="lt white ac" id="hortaf" href="horraire.html"><img class="ilttt" src="../img/hortaf.png">Horaires & Tarifs</a>
+				</div>
+				<div class="img quatre">
+					<a class="lt white ac" id="gale" href="galerie.html"><img class="iltttt" src="../img/gale.png">Galerie</a>
+				</div>	
+			</div>
+		</div>
+	</header>
+	<!-- Mon en-tete end -->
+
+	<!-- Votre style start -->
+	<div class="mainstyle">
+		<div class="ban"><div class="banie"></div></div>
+		<div class="style">
+			<h1 class="white st" id="title">Prendre rendez-vous</h1>
+		</div>
+		<div class="ban"><div class="banie"></div></div>
+	</div>
+	<!-- Votre style end -->
+	<!-- prise de rdv start -->
+	<script type="text/javascript" src="../js/rdv.js"></script>
+	<div id="mainrdv">
+		<div class="form">
+			<form action="javascript:;" onsubmit="res();">
+		<input id="prenom" type="text" name="prenom" placeholder="Prenom" required>
+
+		<input id="nom" type="text" name="nom" placeholder="Nom" required>
+		<br>
+		<input type="tel" name="tel" placeholder="Numero de Télephone" minlength="9" maxlength="15">
+		<input id="mail" type="email" name="mail" placeholder="Mail">
+		<br>
+		<input id="date" type="date" min="2021-12-21" max="2022-03-21" required>
+
+		<select id="heure" >
+			<option value="9">9 Heure</option>
+			<option value="10">10 Heure</option>
+			<option value="11">11 Heure</option>
+			<option value="12">12 Heure</option>
+			<option value="13">13 Heure</option>
+			<option value="15">15 Heure</option>
+			<option value="16">16 Heure</option>
+		</select>
+		<select id="minute" >
+			<option value="00">00</option>
+			<option value="15">15</option>
+			<option value="30">30</option>
+			<option value="45">45</option>
+		</select>
+		<br>
+		<div class="center">
+		<input id="submit" type="submit">
+		</div>
+		</form>
+		</div>
+	</div>
+
+	<div id="cont">
+		<div id="confi">
+			<p id="prend"></p>
+		</div>
+	</div>
+-->
+</body>
+</html>

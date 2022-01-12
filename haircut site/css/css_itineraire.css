@@ -1,0 +1,260 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: content-box;
+	height: 100%;
+	background-color: #1B1D21;
+}
+/* mon en-tete start*/
+header{
+	width: content-box;
+	height: content-box;
+	border-bottom: solid 2px lightgrey;
+	position: sticky;
+	top: 0;	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	z-index: 5;
+	background-color: #1B1D21;
+}
+div#hgauche{
+	width: 35%;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+div#hdroite{
+	width: 65%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	overflow: hidden;
+}
+img{
+	width: 20%;
+	height: 6vw;
+	margin: 0 0 0 1.5%;
+}
+.tt{
+	margin: 0 0 0 2%;
+	font-size: 2.2vw;
+	text-decoration: none;
+	font-family: 'Lobster', cursive;
+}
+.white{
+	color: whitesmoke;
+}
+header a{
+	height: 100%;
+}
+div.liste{
+	margin-right: 0;	
+	width: content-box;
+	height: content-box;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
+	white-space: nowrap;
+}
+div.liste .lt{
+	font-size: 1.6vw;
+	text-decoration: none;	
+	margin: 0 0 0 1%;
+	font-family: 'Vollkorn', serif;
+}
+img.ilt{
+	width: 15%;
+	height: 1.7vw;
+	margin: 0 5%;
+}
+.ac{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+	
+img.iltt{
+	width: 14%;
+	height: 1.7vw;
+	margin: auto 5% 0;
+}	
+
+img.ilttt{
+	width: 13%;
+	height: 1.7vw;
+	margin: 0 3%;
+}
+img.iltttt{
+	width: 27%;
+	height: 1.7vw;
+	margin: 0 5%;
+}
+a:hover{
+	filter: invert(30%)
+}
+
+div.img{
+	margin-right: 9%;	
+	width: 100%;
+}
+/* mon en-tete end*/
+
+/* Votre style et avis start*/
+div.mainstyle{
+	height: content-box;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+div.style{
+	width: content-box;
+}
+div.ban{
+	width: 5%;
+	margin: 0 1.5% 0 1.5%;
+	display: flex;
+	align-content: center;
+}
+div.banie{
+	background-color: whitesmoke;
+	width: 100%;
+	height: 2px;
+	margin: auto 0;
+}
+.st{
+	font-family: 'Eczar', serif;
+	text-shadow: 2px 0 0 black;
+	font-size: 2.3vw;
+}
+/* Votre style et avis end*/
+
+/* Votre style et avis start*/
+div.mainstyle{
+	height: content-box;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+div.style{
+	width: content-box;
+}
+div.ban{
+	width: 5%;
+	margin: 0 1.5% 0 1.5%;
+	display: flex;
+	align-content: center;
+}
+div.banie{
+	background-color: whitesmoke;
+	width: 100%;
+	height: 2px;
+	margin: auto 0;
+}
+/* Votre style et avis end*/
+/* map start*/
+div#mapmain{
+	margin-top: 4vw;
+	width: 100%;
+	height: content-box;
+	display: flex;
+	justify-content: center;
+}
+div.sedmain{
+	width: 35%;
+	height: content-box;
+	background-color: #17181B;
+	border-radius: 25px;
+	padding: 0.7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+	border: 3px solid #8D2F11;
+}
+div.map{
+	width: 60%;
+	height: 90%;	
+}
+div.map a img{
+	width: 100%;
+	height: 100%;
+	float: right;
+	border-top-right-radius: 25px;
+}
+div.addr{
+	width: 40%;
+	margin-top: 1.3%;
+	color: whitesmoke;
+	font-size: 1.5vw;
+	padding: 0.5%;
+	padding-right: 1%;
+	line-height: 2.2vw;
+}
+div.adresse{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 80%;
+	margin: 0.5% 0 4% 0;
+	padding-bottom: 3%;
+	border-bottom: solid 0.2vw #581F19;
+}
+div.reseaux{
+	color: whitesmoke;
+	font-size: 1.5vw;
+}
+div.mainlogo{
+	width: 100%;
+	height: content-box;
+	display: flex;
+	flex-direction: column;
+	margin-top: 7%;
+}
+div.logo{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: 0 auto;
+}
+div.plogo{
+	width: 20%;
+	height: 75%;
+}
+div.plogo img{
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+}
+div.tlogo{
+	font-size: 1.5vw;
+	color: whitesmoke;
+	width: 65%;
+	height: 100%;
+	padding: 0;
+	justify-content: flex-start;
+}
+div.tlogo p{
+	margin: 3.7% 0 0 0;
+	display: flex;
+	justify-content: flex-start;
+}
+div.ttw{
+	width: 15%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+div.fa{
+	width: 15%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
